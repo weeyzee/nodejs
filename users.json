@@ -1,0 +1,44 @@
+[
+  {
+    "username": "danil",
+    "password": "$2b$10$VcubH53Td6D9eVasvRyQteFM438BGNiEexYmjqC49LkiX2EpMXESK",
+    "role": "user",
+    "visits": 4,
+    "email": "mr.danik5@mail.ru"
+  },
+  {
+    "username": "danilfsd",
+    "password": "$2b$10$Zpq111NztQ3ZAhaibTpmc.aajsHfZtjuVqocRWn0AKUCo9Dqe7Su6",
+    "role": "user",
+    "visits": 2,
+    "email": "mr.danik5@mail.ru"
+  },
+  {
+    "username": "danil123",
+    "password": "$2b$10$ZauwU6aKq952oINm14LtRuzmOuR2SkevHq./SCNh/QHP75.D3za5C",
+    "role": "user",
+    "visits": 2,
+    "email": "mr.danik5@mail.ru"
+  },
+  {
+    "username": "danil12343",
+    "password": "$2b$10$Bv8n9LgC4mVHbR.wXvqI9u2YEzb4YEOPbLTTc6F2M4VbfHOY2boxG",
+    "role": "user",
+    "visits": 1,
+    "email": "ekasamsonowa@mail.ru"
+  },
+  {
+    "username": "qe",
+    "password": "$2b$10$KWxSGOD7w6M.xcCqdwI5ye123dz9iZYxk9lrF4OVnrpwTNCSAXWtu",
+    "role": "user",
+    "visits": 0,
+    "email": "mr.danik66@mail.ru"
+  },
+  {
+    "username": "mis",
+    "password": "$2b$10$cSoG/BTbv837MoxwXnJiOeK2i0a0LfjdiAecyf9gTrWNfRvbC03k.",
+    "role": "user",
+    "visits": 1,
+    "email": "mr.danik5@mail.ru"
+  }
+]

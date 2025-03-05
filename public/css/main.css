@@ -1,0 +1,209 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Основные стили для body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 100px; /* Отступ сверху, чтобы текст не перекрывался шапкой */
+}
+
+/* Шапка */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px 0; /* Уменьшение высоты шапки */
+    text-align: center;
+    z-index: 10;
+    border-bottom: 5px solid #f0a500; /* Оранжевая полоска снизу */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Сдвигаем элементы влево и вправо */
+    padding: 0 20px; /* Отступы слева и справа */
+    align-items: center; /* Центрируем по вертикали */
+    max-width: 1200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Центрируем на экране */
+}
+
+/* Логотип */
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem; /* Увеличиваем размер текста */
+    font-weight: bold;
+}
+
+/* Ссылки */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* Увеличиваем размер текста */
+    transition: color 0.3s ease;
+    margin-left: 782px;  /* Отступ от предыдущего элемента */
+    
+}
+
+/* Эффект при наведении */
+.nav-link:hover {
+    color: #f0a500; /* Оранжевый цвет при наведении */
+}
+
+.logo:hover {
+    color: #f0a500; /* Оранжевый цвет для логотипа */
+}
+
+/* Стили для контента */
+h2 {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #333;
+    text-align: top;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Стили для кнопок */
+a, button {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+a:hover, button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+a:active, button:active {
+    background-color: #222;
+}
+
+/* Кнопка администратора */
+.admin-link {
+    background-color: #28a745;
+}
+
+.logout-link {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.admin-link:hover {
+    background-color: #218838;
+}
+
+/* Стиль для основной формы */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Общее оформление */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px; /* Обеспечиваем достаточный отступ от шапки */
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.txt {
+    
+    background-color: #f0a500; /* Цвет фона */
+    padding: 20px; /* Отступы внутри блока */
+    max-width: 500px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрирование блока */
+    
+    border-radius: 10px; /* Сглаженные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень вокруг блока */
+    margin-top: 20px;
+}
+
+.user-name {
+    color: white;
+    font-size: 18px;
+    margin-left: 20px; /* Немного отступа слева, если нужно */
+}
+
+.user-name-container {
+    background-color: #f0a500; /* Оранжевый фон */
+    padding: 11px 3px; /* Отступы внутри блока */
+    border-radius: 5px; /* Скругленные углы */
+    display: inline-block; /* Блок будет вести себя как инлайн-элемент */
+    margin-right: -140px;
+}
+
+/* Стили для адаптивности */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* Вертикальное расположение элементов на мобильных устройствах */
+      align-items: center;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .nav-link {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .user-name-container {
+      margin-top: 10px; /* Отступ сверху для блока с именем */
+    }
+  }
+
+
+  

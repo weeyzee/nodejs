@@ -1,0 +1,11 @@
+<header>
+    <nav>
+        <a href="/" class="logo">Мой Сайт</a>
+        <a href="/about" class="nav-link">О нас</a>
+        <% if (user) { %> <!-- Проверка, если пользователь авторизован -->
+            <div class="user-name-container">
+              <span class="user-name"><%= user %></span>
+            </div>
+          <% } %>
+    </nav>
+</header>

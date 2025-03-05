@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS</title>
+    <link rel="stylesheet" href="/css/main.css">
+    
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <h1>Регистрация</h1>
+    <form action="/register" method="POST">
+        <input type="text" name="username" placeholder="Имя пользователя" required>
+        <input type="email" name="email" placeholder="Почта" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>

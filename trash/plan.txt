@@ -1,0 +1,6 @@
+1. Папка Blocks - автоЗаголовки
+<%- include('blocks/header') -%>
+открыть header и показать настройки
+
+2. npm i body-parser  
+создание app.post(Check-user)  

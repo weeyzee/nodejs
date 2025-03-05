@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <h1>Страница пользователя:<%= username %> </h1> отобразим переменную username , показать возможности шаблонизатора на сайте
+    <% if(username.toLowerCase() == 'john') { %>//ЗНАК = позволяет вывести некую инф, нам надо создать
+    <p>Test</p>
+        <ul>    
+            <% hobbies.forEach((el) => { %>
+                <li><%= el %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+</body>
+</html>

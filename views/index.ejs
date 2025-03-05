@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <main>
+        <h2>Добро пожаловать на главную страницу!</h2>
+        <p>Здесь будет основной контент, доступный для всех пользователей.</p>
+
+        <div>
+            <% if (user) { %>
+                <p>Вы вошли как <%= user %></p>
+                <% if (role === 'admin') { %>
+                    <!-- Кнопка для администратора -->
+                    <a href="/admusers" class="admin-link">Перейти к пользователям</a>
+                <% } %>
+                <!-- Форма для получения письма -->
+                <form action="/send-email" method="POST">
+                    <button type="submit">Получить письмо с именем на сайте</button>
+                </form>
+                <a href="/logout" class="logout-link">Выйти</a>
+            <% } else { %>
+                <!-- Если пользователь не вошел -->
+                <a href="/login" class="login-link">Войти</a> | <a href="/register" class="register-link">Регистрация</a>
+            <% } %>
+        </div>
+        <iframe frameborder="0" allow="clipboard-write" style="border:none;width:614px;height:244px;" width="614" height="244" src="https://music.yandex.ru/iframe/album/35134047/track/135523680">Слушайте <a href="https://music.yandex.ru/album/35134047/track/135523680">Несётся движ</a> — <a href="https://music.yandex.ru/artist/1536005">Восточный округ</a> на Яндекс Музыке</iframe>
+
+        <footer>
+            <p>&copy; 2025 Ваш сайт. Все права защищены.</p>
+        </footer>
+    </main>
+</body>
+</html>
