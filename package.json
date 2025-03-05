@@ -4,7 +4,7 @@
   "description": "forlesson",
   "main": "index.js",
   "scripts": {
-    "start": "node ind.js",
+    "start": "node serverWeb.js",
     "lesson2": "node Lesson2.js"
   },
   "author": "",
