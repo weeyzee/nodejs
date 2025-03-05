@@ -4,7 +4,7 @@
   "description": "forlesson",
   "main": "index.js",
   "scripts": {
-    "start": "node serverWeb.js"
+    "start": "node Main.js"
   },
   "author": "",
   "license": "ISC",
